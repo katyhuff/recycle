@@ -10,9 +10,11 @@ class Reduct {
 
 public:
 
+// default constructor
 Reduct();
 
-Reduct(double reduct_current,double reduct_li2o,double reduct_volume,double reduct_time);
+// overloaded constructor
+Reduct(double reduct_current, double reduct_li2o, double reduct_volume, double reduct_time);
 
 /// @param feed feed yellowcake from voloxidation
 /// @param stream the separation efficiency for reduction streams
@@ -27,8 +29,12 @@ double lithium_oxide;
 double volume;
 double reprocess_time;
 
+/// @param current current passed through the anode
+/// @param lithium_oxide weight percent of lithium oxide catalyst
+/// @return efficiency separation efficiency of the reduction process
 double Efficiency(double current, double lithium_oxide);
 
+/// @return throughput material throughput of reduction
 double Throughput(double volume, double reprocess_time);
 };
 }

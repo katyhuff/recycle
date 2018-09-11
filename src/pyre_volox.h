@@ -11,8 +11,10 @@ class Volox {
 
 public:
 
+// default constructor
 Volox();
 
+// overloaded constructor
 Volox(double volox_temp, double volox_time, double volox_flowrate, double volox_volume);
 
 /// @param feed feed snf

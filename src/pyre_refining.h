@@ -10,9 +10,12 @@ class Refine{
 
 public:
 
+// default constructor
 Refine();
 
-Refine(double refine_temp, double refine_press, double refine_rotation, double refine_batch_size, double refine_time);
+// overloaded constructor
+Refine(double refine_temp, double refine_press, double refine_rotation, 
+	   double refine_batch_size, double refine_time);
 
 /// @param feed salt with uranium and fission product feed
 /// @param stream the separation efficiency for reduction streams
@@ -28,8 +31,15 @@ double rotation;
 double batch_size;
 double reprocess_time;
 
+/// @param temp temperature in the refining vessel
+/// @param pressure pressure in the refining vessel
+/// @param rotation stirrer rotation speed
+/// @return efficiency separation efficiency of the refining process
 double Efficiency(double temp, double pressure, double rotation);
 
+/// @param batch_size size of separation batch
+/// @param reprocess_time time spent in the refining vessel
+/// @return throughput throughput of the refining subprocess
 double Throughput(double batch_size, double reprocess_time);
 };
 }

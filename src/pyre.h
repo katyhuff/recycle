@@ -82,6 +82,10 @@ class Pyre
   typedef std::pair<double, std::map<int, double> > Stream;
   typedef std::map<std::string, Stream> StreamSet;
 
+  /// @param name input the name of the stream
+  /// @param stream the compmap of the stream
+  /// @param feed waste to be separated
+  /// @return material returns a new material separated based on stream name and type
   cyclus::Material::Ptr Separate(std::string name, Stream stream, 
     cyclus::Material::Ptr feed);
 
