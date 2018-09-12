@@ -162,6 +162,7 @@ void Pyre::Tick() {
       leftover.Push(mat);
     }
   }
+  Record("Unseparated", mat->quantity() * maxfrac, "leftover");
 }
  
 Material::Ptr Pyre::Separate(std::string name, Stream stream, 

@@ -52,21 +52,21 @@
         as well as a number of articles by Lee et al. on the electrochemical 
         separation process at KAERI -->
         <volox_temp>1000</volox_temp>
-        <volox_time>4</volox_time>
-        <volox_flowrate>4.5</volox_flowrate>
+        <volox_time>2</volox_time>
+        <volox_flowrate>4</volox_flowrate>
         <volox_volume>10</volox_volume>
-        <reduct_current>10</reduct_current>
+        <reduct_current>9.5</reduct_current>
         <reduct_lithium_oxide>3</reduct_lithium_oxide>
         <reduct_volume>10</reduct_volume>
-        <reduct_time>4</reduct_time>
+        <reduct_time>2</reduct_time>
         <refine_temp>1000</refine_temp>
-        <refine_press>100</refine_press>
+        <refine_press>120</refine_press>
         <refine_rotation>100</refine_rotation>
         <refine_batch_size>40</refine_batch_size>
-        <refine_time>4</refine_time>
-        <winning_current>10</winning_current>
-        <winning_time>4</winning_time>
-        <winning_flowrate>4.5</winning_flowrate>
+        <refine_time>2</refine_time>
+        <winning_current>9.5</winning_current>
+        <winning_time>2</winning_time>
+        <winning_flowrate>4</winning_flowrate>
         <winning_volume>10</winning_volume>
         <feedbuf_size>1000</feedbuf_size>
         <throughput>1000</throughput>
