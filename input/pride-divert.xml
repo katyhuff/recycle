@@ -35,7 +35,7 @@
           <val>refine_U_prod</val>
           <val>refine_TRU_prod</val>
           <val>winning_waste</val>
-          <val>reprocess_waste</val>
+          <val>leftover</val>
         </in_commods>
         <capacity>1e299</capacity>
       </Sink>
@@ -52,23 +52,23 @@
         <!-- Inputs estimated from "Spent Fuel Reprocessing" - Robert Jubin        
         as well as a number of articles by Lee et al. on the electrochemical 
         separation process at KAERI -->
-        <volox_temp>500</volox_temp>
+        <volox_temp>1000</volox_temp>
         <volox_time>1</volox_time>
-        <volox_flowrate>1</volox_flowrate>
+        <volox_flowrate>2</volox_flowrate>
         <volox_volume>1</volox_volume>
-        <reduct_current>4.8</reduct_current>
-        <reduct_lithium_oxide>1</reduct_lithium_oxide>
+        <reduct_current>10</reduct_current>
+        <reduct_lithium_oxide>2</reduct_lithium_oxide>
         <reduct_volume>1</reduct_volume>
-        <reduct_time>1</reduct_time>
-        <refine_temp>500</refine_temp>
-        <refine_press>760</refine_press>
+        <reduct_time>2</reduct_time>
+        <refine_temp>1000</refine_temp>
+        <refine_press>200</refine_press>
         <refine_rotation>100</refine_rotation>
-        <refine_batch_size>10</refine_batch_size>
-        <refine_time>1</refine_time>
-        <winning_current>4.8</winning_current>
+        <refine_batch_size>30</refine_batch_size>
+        <refine_time>2</refine_time>
+        <winning_current>10</winning_current>
         <winning_time>1</winning_time>
-        <winning_flowrate>1</winning_flowrate>
-        <winning_volume>1</winning_volume>
+        <winning_flowrate>3</winning_flowrate>
+        <winning_volume>2</winning_volume>
         <feedbuf_size>1000</feedbuf_size>
         <throughput>1000</throughput>
         <leftover_commod>reprocess_waste</leftover_commod>

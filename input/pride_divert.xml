@@ -52,7 +52,7 @@
         <!-- Inputs estimated from "Spent Fuel Reprocessing" - Robert Jubin        
         as well as a number of articles by Lee et al. on the electrochemical 
         separation process at KAERI -->
-        <volox_temp>1000</volox_temp>
+        <volox_temp>900</volox_temp>
         <volox_time>1</volox_time>
         <volox_flowrate>2</volox_flowrate>
         <volox_volume>1</volox_volume>
