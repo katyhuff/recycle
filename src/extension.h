@@ -15,7 +15,7 @@ Extension();
 // overloaded constructor
 Extension(std::string funct, double value);
 
-std::string fucnt;
+std::string funct;
 double value;
 
 }
