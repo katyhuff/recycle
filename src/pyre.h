@@ -167,6 +167,13 @@ class Pyre
   double volox_temp;
 
   #pragma cyclus var { \
+    "doc": "Governing function for Voloxidation temperature", \
+    "uilabel": "Volox Temp Equation", \
+    "default": "", \
+  }
+  std::string volox_temp_funct;
+
+  #pragma cyclus var { \
   "doc": "Time spent in the Voloxidation process", \
   "tooltip": "Voloxidation process time", \
   "units": "hrs", \
@@ -207,6 +214,13 @@ class Pyre
   double reduct_current;
 
   #pragma cyclus var { \
+    "doc": "Governing function for Reduction Current", \
+    "uilabel": "Reduct Current Equation", \
+    "default": "", \
+  }
+  std::string reduct_current_funct;
+
+  #pragma cyclus var { \
   "doc": "Weight Percent of Lithium Oxide in Reduction process", \
   "tooltip": "Lithium Oxide Weight Percent", \
   "units": "wt%", \
@@ -215,6 +229,13 @@ class Pyre
   "uilabel": "Reduction Li2O wt%", \
   }
   double reduct_lithium_oxide;
+
+  #pragma cyclus var { \
+    "doc": "Governing function for Reduction Lithium efficiency", \
+    "uilabel": "Reduct Lithium Equation", \
+    "default": "", \
+  }
+  std::string reduct_li2o_funct;
 
   #pragma cyclus var { \
   "doc": "Volume of the Electroreduction Chamber", \
@@ -247,6 +268,13 @@ class Pyre
   double refine_temp;
 
   #pragma cyclus var { \
+    "doc": "Governing function for Refining Temp efficiency", \
+    "uilabel": "Refine Temp Equation", \
+    "default": "", \
+  }
+  std::string refine_temp_funct;
+
+  #pragma cyclus var { \
   "doc": "Pressure of the Electrorefining process", \
   "tooltip": "Electrorefining Pressure", \
   "units": "mTorr", \
@@ -257,6 +285,13 @@ class Pyre
   double refine_press;
 
   #pragma cyclus var { \
+    "doc": "Governing function for Refining Pressure efficiency", \
+    "uilabel": "Refine Press Equation", \
+    "default": "", \
+  }
+  std::string refine_press_funct;
+
+  #pragma cyclus var { \
   "doc": "Anode Rotation rate in the Electrorefiner", \
   "tooltip": "Rotation speed", \
   "units": "rpm", \
@@ -265,6 +300,13 @@ class Pyre
   "uilabel": "Rotation speed", \
   }
   double refine_rotation;
+
+  #pragma cyclus var { \
+    "doc": "Governing function for Refining Rotation efficiency", \
+    "uilabel": "Refine Rotation Equation", \
+    "default": "", \
+  }
+  std::string refine_rotate_funct;
 
   #pragma cyclus var { \
   "doc": "Batch Size of the Electrorefining process", \
@@ -297,6 +339,13 @@ class Pyre
   double winning_current;
 
   #pragma cyclus var { \
+    "doc": "Governing function for Winning Current efficiency", \
+    "uilabel": "Winning Current Equation", \
+    "default": "", \
+  }
+  std::string winning_current_funct;
+
+  #pragma cyclus var { \
   "doc": "Time spent in the Electrowinning process", \
   "tooltip": "Electrowinning Time", \
   "units": "hr", \
@@ -315,6 +364,13 @@ class Pyre
   "uilabel": "Electrowinning Flowrate", \
   }
   double winning_flowrate;
+
+  #pragma cyclus var { \
+    "doc": "Governing function for Winning Flowrate efficiency", \
+    "uilabel": "Winning Flowrate Equation", \
+    "default": "", \
+  }
+  std::string winning_flowrate_funct;
 
   #pragma cyclus var { \
   "doc": "Volume of the Electrowinning process", \

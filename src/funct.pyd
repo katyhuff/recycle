@@ -1,0 +1,11 @@
+
+from libcpp.string cimport string
+cdef extern from "Extension.cc":
+	pass
+
+cdef extern from "extension.h" namespace "recycle":
+	cdef cppclass Extension:
+		Extention(string, double) except +
+
+		string funct
+		double value

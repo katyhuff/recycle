@@ -15,7 +15,9 @@ namespace recycle {
 Reduct::Reduct() {}
 
 Reduct::Reduct(double reduct_current = 5, double reduct_lithium_oxide = 2, 
-               double reduct_volume = 10, double reduct_time = 1) {
+               double reduct_volume = 10, double reduct_time = 1,
+               std::string reduct_current_funct,
+               std::string reduct_lithium_funct) {
   current = reduct_current;
   lithium_oxide = reduct_lithium_oxide;
   volume = reduct_volume;
@@ -56,9 +58,13 @@ Material::Ptr Reduct::ReductSepMaterial(std::map<int, double> effs,
 }
 
 double Reduct::Efficiency(double current, double lithium_oxide) {
-  double coulombic_eff = -0.00685*pow(current,4) + 0.20413*pow(current,3) 
-                         - 2.273*pow(current,2) + 11.2046*current - 19.7493;
-  double catalyst_eff = 0.075 * lithium_oxide + 0.775;
+  double coulumbic_eff = Extension::string_to_function(std::string 
+    reduct_current_funct, double current);
+  double catalyst_eff = Extension::string_to_function(std::string 
+    reduct_lithium_funct, double lithium_oxide);
+  //double coulombic_eff = -0.00685*pow(current,4) + 0.20413*pow(current,3) 
+  //                       - 2.273*pow(current,2) + 11.2046*current - 19.7493;
+  //double catalyst_eff = 0.075 * lithium_oxide + 0.775;
   double reduct_eff = coulombic_eff * catalyst_eff;
   return reduct_eff;
 }
